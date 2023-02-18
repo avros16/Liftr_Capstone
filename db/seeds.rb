@@ -1,7 +1,95 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# p "destroy all old data ♻️"
+User.destroy_all
+Favorite.destroy_all
+Exercise.destroy_all
+
+
+ puts "seeding exercise Data 🌱"
+ Exercise.create!(name: "3/4 sit-up", target: "abs", bodyPart: "Abs", equipment:"body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0001.gif")
+ Exercise.create!(name: "45° side bend", target: "abs", bodyPart: "Abs", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0002.gif")
+ Exercise.create!(name: "alternate heel touchers", target: "abs", bodyPart: "Abs", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0006.gif")
+ Exercise.create!(name: "assisted lying leg raise with lateral throw down", target: "abs", bodyPart: "Abs", equipment: "assisted", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0012.gif")
+ Exercise.create!(name: "assisted motion russian twist", target: "abs", bodyPart: "Abs", equipment: "medicine ball", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0014.gif")
+ Exercise.create!(name: "band alternating v-up", target: "abs", bodyPart: "Abs", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0969.gif")
+ Exercise.create!(name: "band assisted wheel rollerout", target: "abs", bodyPart: "Abs", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0971.gif")
+ Exercise.create!(name: "band bench press", target: "pectorals", bodyPart: "Chest", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1254.gif")
+ Exercise.create!(name: "band one arm twisting chest press", target: "pectorals", bodyPart: "Chest", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0989.gif")
+ Exercise.create!(name: "barbell decline bench press", target: "pectorals", bodyPart: "Chest", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0033.gif")
+ Exercise.create!(name: "barbell decline pullover", target: "pectorals", bodyPart: "Chest", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1255.gif")
+ Exercise.create!(name: "barbell decline wide-grip press", target: "pectorals", bodyPart: "Chest", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0036.gif")
+ Exercise.create!(name: "barbell front raise and pullover", target: "pectorals", bodyPart: "Chest", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0040.gif")
+ Exercise.create!(name: "barbell incline shoulder raise", target: "serratus anterior", bodyPart: "Chest", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0050.gif")
+ Exercise.create!(name: "barbell jefferson squat", target: "glutes", bodyPart: "Legs", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0051.gif")
+ Exercise.create!(name: "barbell jump squat", target: "glutes", bodyPart: "Legs", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0053.gif")
+ Exercise.create!(name: "barbell lateral lunge", target: "glutes", bodyPart: "Legs", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1410.gif")
+ Exercise.create!(name: "band stiff leg deadlift", target: "glutes", bodyPart: "Legs", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1009.gif")
+ Exercise.create!(name: "band straight back stiff leg deadlift", target: "glutes", bodyPart: "Legs", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1023.gif")
+ Exercise.create!(name: "barbell clean and press", target: "quads", bodyPart: "Legs", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0028.gif")
+ Exercise.create!(name: "barbell clean-grip front squat", target: "glutes", bodyPart: "Legs", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0029.gif")
+ Exercise.create!(name: "barbell close-grip bench press", target: "triceps", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0030.gif")
+ Exercise.create!(name: "barbell curl", target: "biceps", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0031.gif")
+ Exercise.create!(name: "barbell decline close grip to skull press", target: "triceps", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0035.gif")
+ Exercise.create!(name: "barbell incline close grip bench press", target: "triceps", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1719.gif")
+ Exercise.create!(name: "barbell incline reverse-grip press", target: "triceps", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0048.gif")
+ Exercise.create!(name: "assisted standing triceps extension (with towel)", target: "triceps", bodyPart: "Arms", equipment: "assisted", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0018.gif")
+ Exercise.create!(name: "assisted triceps dip (kneeling)", target: "triceps", bodyPart: "Arms", equipment: "leverage machine", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0019.gif")
+ Exercise.create!(name: "band alternating biceps curl", target: "biceps", bodyPart: "Arms", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0968.gif")
+ Exercise.create!(name: "back pec stretch", target: "lats", bodyPart: "Back", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1405.gif")
+ Exercise.create!(name: "back lever", target: "upper back", bodyPart: "Back", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3297.gif")
+ Exercise.create!(name: "back extension on exercise ball", target: "spine", bodyPart: "Back", equipment: "stability ball", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1314.gif")
+ Exercise.create!(name: "barbell decline wide-grip pullover", target: "lats", bodyPart: "Back", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0037.gif")
+ Exercise.create!(name: "barbell incline row", target: "upper back", bodyPart: "Back", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0049.gif")
+ Exercise.create!(name: "barbell pendlay row", target: "upper back", bodyPart: "Back", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3017.gif")
+ Exercise.create!(name: "barbell pullover", target: "lats", bodyPart: "Back", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0073.gif")
+ Exercise.create!(name: "barbell reverse grip incline bench row", target: "upper back", bodyPart: "Back", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1317.gif")
+ Exercise.create!(name: "barbell reverse wrist curl", target: "forearms", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0082.gif")
+ Exercise.create!(name: "barbell standing back wrist curl", target: "forearms", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0104.gif")
+ Exercise.create!(name: "barbell wrist curl", target: "forearms", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0126.gif")
+ Exercise.create!(name: "barbell wrist curl v. 2", target: "forearms", bodyPart: "Arms", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0125.gif")
+ Exercise.create!(name: "cable standing back wrist curl", target: "forearms", bodyPart: "Arms", equipment: "cable", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0224.gif")
+ Exercise.create!(name: "band wrist curl", target: "forearms", bodyPart: "Arms", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1016.gif")
+ Exercise.create!(name: "dumbbell finger curls", target: "forearms", bodyPart: "Arms", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1437.gif")
+ Exercise.create!(name: "cable rear delt row (stirrups)", target: "delts", bodyPart: "Shoulders", equipment: "cable", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0202.gif")
+ Exercise.create!(name: "cable rear delt row (with rope)", target: "delts", bodyPart: "Shoulders", equipment: "cable", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0203.gif")
+ Exercise.create!(name: "cable seated rear lateral raise", target: "delts", bodyPart: "Shoulders", equipment: "cable", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0215.gif")
+ Exercise.create!(name: "cable standing cross-over high reverse fly", target: "delts", bodyPart: "Shoulders", equipment: "cable", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0225.gif")
+ Exercise.create!(name: "barbell skier", target: "delts", bodyPart: "Shoulders", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0100.gif")
+ Exercise.create!(name: "barbell seated overhead press", target: "delts", bodyPart: "Shoulders", equipment: "barbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0091.gif")
+ Exercise.create!(name: "band y-raise", target: "delts", bodyPart: "Shoulders", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1017.gif")
+ Exercise.create!(name: "band twisting overhead press", target: "delts", bodyPart: "Shoulders", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1012.gif")
+ Exercise.create!(name: "band standing rear delt row", target: "delts", bodyPart: "Shoulders", equipment: "band", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1022.gif")
+ Exercise.create!(name: "calf push stretch with hands against wall", target: "calves", bodyPart: "Legs", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1407.gif")
+ Exercise.create!(name: "calf stretch with hands against wall", target: "calves", bodyPart: "Legs", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1377.gif")
+ Exercise.create!(name: "calf stretch with rope", target: "calves", bodyPart: "Legs", equipment: "rope", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1378.gif")
+ Exercise.create!(name: "dumbbell seated one leg calf raise - hammer grip", target: "calves", bodyPart: "Legs", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1380.gif")
+ Exercise.create!(name: "exercise ball on the wall calf raise (tennis ball between knees)", target: "calves", bodyPart: "Legs", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3240.gif")
+ Exercise.create!(name: "exercise ball on the wall calf raise (tennis ball between ankles)", target: "calves", bodyPart: "Legs", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3241.gif")
+ Exercise.create!(name: "exercise ball on the wall calf raise", target: "calves", bodyPart: "Legs", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1382.gif")
+ Exercise.create!(name: "hack calf raise", target: "calves", bodyPart: "Legs", equipment: "sled machine", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1383.gif")
+ Exercise.create!(name: "lever calf press ", target: "calves", bodyPart: "Legs", equipment: "leverage machine", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2289.gif")
+ Exercise.create!(name: "lever rotary calf", target: "calves", bodyPart: "Legs", equipment: "leverage machine", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2315.gif")
+ Exercise.create!(name: "run", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0685.gif")
+ Exercise.create!(name: "dumbbell burpee", target: "cardiovascular system", bodyPart: "Cardio", equipment: "dumbbell", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1201.gif")
+ Exercise.create!(name: "half knee bends", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3221.gif")
+ Exercise.create!(name: "high knee against wall", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3636.gif")
+ Exercise.create!(name: "jack burpee", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0501.gif")
+ Exercise.create!(name: "jack jump ", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3224.gif")
+ Exercise.create!(name: "jump rope", target: "cardiovascular system", bodyPart: "Cardio", equipment: "rope", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2612.gif")
+ Exercise.create!(name: "semi squat jump", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3222.gif")
+ Exercise.create!(name: "short stride run", target: "cardiovascular system", bodyPart: "Cardio", equipment: "body weight", gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3656.gif")
+
+
+
+ puts "seeding users"
+ User.create!(username: "Test", email: "Test@test.com", password: 'test')
+ User.create!(username: "Chris", email: "Tes@test.com", password: 'tes')
+ User.create!(username: "Chri", email: "Te@test.com", password: 'te')
+
+
+ puts "seeding favorites"
+Favorite.create!(user_id: 1, exercise_id: 7)
+Favorite.create!(user_id: 1, exercise_id: 6)
+Favorite.create!(user_id: 2, exercise_id: 8)
+Favorite.create!(user_id: 1, exercise_id: 18)
+Favorite.create!(user_id: 2, exercise_id: 33)
+Favorite.create!(user_id: 2, exercise_id: 5)
