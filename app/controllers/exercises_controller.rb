@@ -1,6 +1,6 @@
 class ExercisesController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found
-skip_before_action :authorized
+# skip_before_action :authorized
 
 
     def index 
@@ -15,16 +15,34 @@ skip_before_action :authorized
 
 
 
- def find
-    exercise = Exercise.where(bodyPart: params[:bodyPart])
-    render json: exercise
- end
+    # def pectorals
+    #     exercise = Exercise.where(target: 'pectorals')
+    #     render json: exercise
+    # end
+    def glutes
+        exercise = Exercise.where(target: 'glutes')
+        render json: exercise
+    end
+    def chest
+        body = Exercise.where(bodyPart:'Chest')
+        render json: body
+    end
+    def back
+        body = Exercise.where(bodyPart:'Back')
+        render json: body
+    end
+    def arm
+        body = Exercise.where(bodyPart:'Arms')
+        render json: body
+    end
+    def abs
+        body = Exercise.where(bodyPart:'Abs')
+        render json: body
+    end
 
 
-#  def example
-#     exercise = Exercise.find(params[:glutes])
-#     render json: exercise, serializer: ExerciseSerializer
-# end
+
+
 
  private
 

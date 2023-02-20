@@ -1,6 +1,16 @@
-function Glute () {
+import React from 'react'
+import GlutesContainer from './GlutesContainer'
+
+function Glute ({glutes, user}) {
     return (
-  <p></p>
+  <div>
+
+
+<GlutesContainer glutes={glutes}/>
+
+
+
+  </div>
     );
   }
   

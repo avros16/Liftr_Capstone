@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found
-  skip_before_action :authorized, only: [:create, :index, :show, :update]
+  # skip_before_action :authorized, only: [:create, :index, :show, :update]
 
     def index
         user = User.all
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     def create
        user = User.create!(create_user_params)
        token = encode_token({user_id: user.id})
-      #  render json: {user: UserSerializer.new(user), jwt: token}, status: :created
+       render json: {user: UserSerializer.new(user), jwt: token}, status: :created
     end
 
     def me

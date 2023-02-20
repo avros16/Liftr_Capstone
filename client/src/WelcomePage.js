@@ -1,7 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './WelcomePage.css'
+import { useLocation } from 'react-router-dom';
 
 function WelcomePage() {
+
+      const location = useLocation();
+      // const state = location.state;
+      // const navigate = useNavigate();
+      console.log(location)
+
+
+      function handleClick() {
+        const newUrl = '/glutes'; 
+        window.location.href = newUrl;
+      }
+
+
     return (
   <div className="start"> 
 
@@ -21,16 +35,16 @@ Welcome to our fitness website! We are here to inspire and empower you to live y
 <div>
 
       <div class="text">
-<img id="front"src="https://i.ibb.co/0GC2Ywr/IMG-9813-removebg-preview.png" alt="IMG-9813-removebg-preview" border="0"/>
+<img id="front"src="https://i.ibb.co/0GC2Ywr/IMG-9813-removebg-preview.png" alt="IMG-9813-removebg-preview" border="0" onClick={handleClick}/>
       </div>
       <div class="text">
-<img id="front"src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" />
+<img id="front"src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" onClick={handleClick}/>
       </div>
       <div>
-<img id="front"src="https://i.ibb.co/JdL8Sgy/IMG-9811-removebg-preview.png" alt="IMG-9811-removebg-preview" border="0" />
+<img id="front"src="https://i.ibb.co/JdL8Sgy/IMG-9811-removebg-preview.png" alt="IMG-9811-removebg-preview" border="0" onClick={handleClick} />
       </div>
       <div>
-<img id="front"src="https://i.ibb.co/W5vvqzM/IMG-9810-removebg-preview.png" alt="IMG-9810-removebg-preview" border="0" />
+<img id="front"src="https://i.ibb.co/W5vvqzM/IMG-9810-removebg-preview.png" alt="IMG-9810-removebg-preview" border="0"onClick={handleClick} />
       </div>
       <div>
 <img id="front"src="https://i.ibb.co/bWNhFHd/IMG-9806-removebg-preview.png" alt="IMG-9806-removebg-preview" border="0" />

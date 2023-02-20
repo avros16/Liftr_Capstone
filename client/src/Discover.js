@@ -1,33 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import DiscoverContainer from './DiscoverContainer'
 
 
-function Discover() {
+function Discover({exercises}) {
 
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/exercises')
-    // credentials: 'include' for auth
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error(error));
-  }, []);
 
 
     return (
-  <p>
+  <div>
+
+<DiscoverContainer exercises={exercises} />
 
 <div>
-    {data.map(item => <div key={item.id}>{item.name}</div>)}
-
-    
-  </div>
 
 
 
 
-  </p>
+
+{/* {exercises?.map((exercise) => (
+        <DiscoverContainer key={exercise.id} exercise={exercise} />
+      ))} */}
+</div>
+
+</div>
+
+
+
+
+
     );
   }
-  
+
   export default Discover;

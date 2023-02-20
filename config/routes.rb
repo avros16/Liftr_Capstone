@@ -1,20 +1,16 @@
 Rails.application.routes.draw do
-  get "/find/:bodyPart", to: "exercises#find"
+  # get "/:bodyPart", to: "exercises#bodyPart"
   get "/fav", to: "users#favorite_exercises"
-  get "/exercises", to: "exercises#index"
   delete "/delete/:exercise_id", to: "users#fav_delete"
+  post "/auth/login", to: "auth#login"
 
 
-
-  get "/glutes", to:
-  get "/calves", to: 
-  get "/quads", to:
-  get "/hamstrings", to:
-  get "/abs", to: 
-  get "/chest", to:
-  get "/arms", to: 
-  get "/back", to:
-  
+  # get '/pectorals', to: 'exercises#pectorals'
+  get '/glutes', to: 'exercises#glutes'
+  get '/chest', to: 'exercises#chest'
+  get '/arms', to: 'exercises#arm'
+  get '/abs', to: 'exercises#abs'
+  get '/back', to: 'exercises#back'
 
 
   resources :exercises, only: [:index, :show]
