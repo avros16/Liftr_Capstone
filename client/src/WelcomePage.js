@@ -20,6 +20,12 @@ function WelcomePage({user}) {
       }
 
 
+
+      function handleClickTwo() {
+            navigate('/discover', { state: {user} })
+
+      }
+
     return (
   <div className="start"> 
 
@@ -32,7 +38,7 @@ Welcome to our fitness website! We are here to inspire and empower you to live y
 
 
 
-   <div className="buttonSection"> <button className="button"> <h3>Click here to start </h3></button> </div>
+   <div className="buttonSection"> <button onClick={handleClickTwo} className="button"> <h3>Click here to start </h3></button> </div>
 </div>
 
 <div className="innerSection">
