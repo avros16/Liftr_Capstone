@@ -2,14 +2,14 @@ import React from 'react'
 import GlutesCard from './GlutesCard'
 
 
-function GlutesContainer({glutes}) {
+function GlutesContainer({glutes, user}) {
 
   return (
     <div>
 
         <div>
 {glutes.map((glute)=>(
-    <GlutesCard key={glute.id} glute={glute}/>
+    <GlutesCard user={user} key={glute.id} glute={glute}/>
 ))}
 
         </div>

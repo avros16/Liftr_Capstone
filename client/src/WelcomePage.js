@@ -1,18 +1,22 @@
 import React from 'react';
 import './WelcomePage.css'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate} from 'react-router-dom';
 
-function WelcomePage() {
+function WelcomePage({user}) {
 
       const location = useLocation();
-      // const state = location.state;
-      // const navigate = useNavigate();
+      const state = location.state;
+      const navigate = useNavigate();
       console.log(location)
-
+      console.log(state)
 
       function handleClick() {
-        const newUrl = '/glutes'; 
-        window.location.href = newUrl;
+            navigate('/glutes', { state: {user} })
+
+
+
+      //   const newUrl = ('/glutes', { state: {user} }); 
+      //   window.location.href = newUrl;
       }
 
 

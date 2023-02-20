@@ -6,7 +6,7 @@ function Glute ({glutes, user}) {
   <div>
 
 
-<GlutesContainer glutes={glutes}/>
+<GlutesContainer user={user} glutes={glutes}/>
 
 
 

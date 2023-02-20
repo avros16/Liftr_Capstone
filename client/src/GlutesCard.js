@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from "react"
-export
+import React from "react"
 
 
-function GlutesCard({glute}) {
+
+function GlutesCard({glute, user}) {
+
+  console.log(user)
   return (
     <div>
         <div>
