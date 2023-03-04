@@ -8,6 +8,11 @@ function Discover({exercises}) {
 
     return (
   <div>
+    <div> 
+      <h1> Discover New Exercises </h1>
+
+
+      </div>
 
 <DiscoverContainer exercises={exercises} />
 

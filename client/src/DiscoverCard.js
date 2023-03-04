@@ -9,7 +9,7 @@ function DiscoverCard({exercise}) {
   return (
   <div className="box">
   <div>
-      <img src={exercise.gifUrl} alt="gif" />
+      <img className="imgs" src={exercise.gifUrl} alt="gif" />
   </div>
   <div>
       <h2>
