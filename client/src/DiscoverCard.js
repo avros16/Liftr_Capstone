@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-export
+import "./DiscoverCard.css"
 
 
 
@@ -7,7 +7,7 @@ export
 function DiscoverCard({exercise}) {
 
   return (
-  <div>
+  <div className="box">
   <div>
       <img src={exercise.gifUrl} alt="gif" />
   </div>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
-// import "./Login.css"
+import "./Login.css"
 
 
 function Login({onLogin}) {
@@ -65,15 +65,18 @@ function Login({onLogin}) {
   return (
     <div>
       { log ? (
-        //  <div className= "login">
+        <div className= "main">
+          <div className="sign">
+          <p align="center"> Login </p>
+          </div>
     <form onSubmit={handleSubmit}>
       <div className="text">
-      <h4 align="center">Login</h4>
       </div>
       <input
         type="text"
-        className="user"
+        className="un"
         placeholder="Username"
+  
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       ></input>
@@ -88,19 +91,18 @@ function Login({onLogin}) {
       <br/>
       <input type="submit" className="submit" value="login"></input>
     </form>
-  //  </div>
+   </div>
       ) : (
-      // <div className="secondLogin">
+      <div className="main">
+        <h4 align="center" className="sign" >Sign Up</h4>
     <form onSubmit={handleSignUp}>
-       <div className="text">
-        <h4 align="center" >Sign Up</h4>
-        </div>
-      <input type="text" placeholder="Enter username" className="user" value={newUser} onChange={(e) => setNewUser(e.target.value)}></input>
+      
+      <input type="text" placeholder="Enter username" className="un" value={newUser} onChange={(e) => setNewUser(e.target.value)}></input>
       <input type="password" placeholder="Enter password" className="pass" value={newPassword} onChange={(e) => setNewPassword(e.target.value)}></input>
-      <input type="Email" placeholder="Email" className="mail" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+      <input type="Email" placeholder="Email" className="pass" value={email} onChange={(e) => setEmail(e.target.value)}></input>
       <input type="submit" className="submit"value="Sign Up"/>
     </form>
-    // </div>
+     </div>
       )
     }
     <p className="accountOnclick"   align="center" onClick={handleClick}>{log ? "Don't have an account? Sign up!" : "Have an account? Login!" }</p>

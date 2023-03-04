@@ -1,12 +1,12 @@
 import React from 'react'
 import DiscoverCard from "./DiscoverCard"
-
+import "./DiscoverContainer.css"
 
 
 function DiscoverContainer({exercises}) {
     return (
 
-<div>
+<div className="results">
 
 {exercises.map((exercise) => (
         <DiscoverCard key={exercise.id} exercise={exercise} />
