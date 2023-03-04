@@ -78,11 +78,15 @@ Variety is the spice of life! Doing different exercises can help get you where y
 
 <div id="Back">
 
-<img id="back"src="https://i.ibb.co/6rCgggJ/IMG-9822-removebg-preview.png" alt="IMG-9822-removebg-preview" border="0"/>
-<img id="back"src="https://i.ibb.co/cgtnkJ7/IMG-9821-removebg-preview.png" alt="IMG-9821-removebg-preview" border="0"/>
-<img id="back"src="https://i.ibb.co/xYH1Vs5/IMG-9820-removebg-preview.png" alt="IMG-9820-removebg-preview" border="0" onClick={handleClick}/>
-<img id="back"src="https://i.ibb.co/YXpZ9Vc/IMG-9819-removebg-preview.png" alt="IMG-9819-removebg-preview" border="0"/>
-<img id="back"src="https://i.ibb.co/VtqJcHS/IMG-9818-removebg-preview.png" alt="IMG-9818-removebg-preview" border="0"/>
+<img id="back" className="head2" src="https://i.ibb.co/6rCgggJ/IMG-9822-removebg-preview.png" alt="IMG-9822-removebg-preview" border="0"/>
+
+<img id="back" className="back" src="https://i.ibb.co/cgtnkJ7/IMG-9821-removebg-preview.png" alt="IMG-9821-removebg-preview" border="0"/>
+
+<img id="back" className="glutes" src="https://i.ibb.co/xYH1Vs5/IMG-9820-removebg-preview.png" alt="IMG-9820-removebg-preview" border="0" onClick={handleClick}/>
+
+<img id="back" className="hamstrings" src="https://i.ibb.co/YXpZ9Vc/IMG-9819-removebg-preview.png" alt="IMG-9819-removebg-preview" border="0"/>
+
+<img id="back" className="calf2" src="https://i.ibb.co/VtqJcHS/IMG-9818-removebg-preview.png" alt="IMG-9818-removebg-preview" border="0"/>
 
 
 

@@ -61,16 +61,31 @@
     width: 250px;
 }
 
+.head2{
+    position: absolute;
+    top: 30px;
+    left: 977px;
+    height:100px;
+    width: 300px;
+}
+.head2:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
 .head:hover {
     background-color: #4CAF50; /* Green */
     color: white;
   }
+
 .chest {
     position: absolute;
     top: 130px;
     height:100px;
     width: 251px;
 }
+
+
 .chest:hover {
     background-color: #4CAF50; /* Green */
     color: white;
@@ -102,6 +117,58 @@
     width: 249px;
 }
 .calf:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+
+  .back {
+        position: absolute;
+        left:1000px;
+        top: 130px;
+        height:180px;
+        width: 251px;
+
+  }
+  .back:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+.glutes {
+    position: absolute;
+    left:1000px;
+    top: 310px;
+    height:70px;
+    width: 252px;
+}
+.glutes:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+.hamstrings {
+        position: absolute;
+        left:1000px;
+        top: 380px;
+        height:100px;
+        width: 248px;
+    
+}
+
+.hamstrings:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+.calf2 {
+        position: absolute;
+        left:1000px;
+        top: 480px;
+        height:150px;
+        width: 248px;
+
+}
+
+.calf2:hover {
     background-color: #4CAF50; /* Green */
     color: white;
   }
