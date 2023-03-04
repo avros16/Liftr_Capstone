@@ -41,34 +41,34 @@ Variety is the spice of life! Doing different exercises can help get you where y
    <div className="buttonSection"> <button onClick={handleClickTwo} className="button"> <h3>Click here to start </h3></button> </div>
 </div>
 
-<div className="innerSection">
+<div className="innerSection" id="bodypartimg">
 <div>
 
 
 {/* front section */}
 
       <div>
-<img id="front"src="https://i.ibb.co/0GC2Ywr/IMG-9813-removebg-preview.png" alt="IMG-9813-removebg-preview" border="0" onClick={handleClick}/>
+<img id="front" className="head" src="https://i.ibb.co/0GC2Ywr/IMG-9813-removebg-preview.png" alt="IMG-9813-removebg-preview" border="0" onClick={handleClick}/>
       </div>
 
 
       <div>
-<img id="front"src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" onClick={handleClick}/>
+<img id="front" className="chest" src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" onClick={handleClick}/>
       </div>
 
 
       <div>
-<img id="front"src="https://i.ibb.co/JdL8Sgy/IMG-9811-removebg-preview.png" alt="IMG-9811-removebg-preview" border="0" onClick={handleClick} />
+<img id="front" className="abs" src="https://i.ibb.co/JdL8Sgy/IMG-9811-removebg-preview.png" alt="IMG-9811-removebg-preview" border="0" onClick={handleClick} />
       </div>
 
 
       <div>
-<img id="front"src="https://i.ibb.co/W5vvqzM/IMG-9810-removebg-preview.png" alt="IMG-9810-removebg-preview" border="0"onClick={handleClick} />
+<img id="front" className="legs"src="https://i.ibb.co/W5vvqzM/IMG-9810-removebg-preview.png" alt="IMG-9810-removebg-preview" border="0"onClick={handleClick} />
       </div>
 
 
       <div>
-<img id="front"src="https://i.ibb.co/bWNhFHd/IMG-9806-removebg-preview.png" alt="IMG-9806-removebg-preview" border="0" onClick={handleClick} />
+<img id="front"  className="calf" src="https://i.ibb.co/bWNhFHd/IMG-9806-removebg-preview.png" alt="IMG-9806-removebg-preview" border="0" onClick={handleClick} />
       </div>
 
 
