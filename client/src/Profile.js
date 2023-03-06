@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './Profile.css'
 
 
 
@@ -80,17 +80,18 @@ function Profile({ user }) {
         {displayA ?
         (<p> </p>
         ) : (
-          <div>
-            <p>First Name: {firstName}</p>
-            <p>Last Name: {lastName}</p>
-            <p>Email: {user.email}</p>
-            <p>goal: {goal}</p>
-            <p>weight: {weight}</p>
-            <p>personalBestSquat: {personalBestSquat}</p>
-            <p>personalBestBench: {personalBestBench}</p>
-            <p>personalBestMile: {personalBestMile}</p>
-            <p>personalBestDeadlift: {personalBestDeadlift}</p>
-            <p> bodyFatPercentage: {bodyFatPercentage}</p>
+          <div className='account'>
+            <h3 className='accountInfo'> Current Account Information</h3>
+            <p className='details'>First Name: {firstName}</p>
+            <p className='details'>Last Name: {lastName}</p>
+            <p className='details'>Email: {user.email}</p>
+            <p className='details'>goal: {goal}</p>
+            <p className='details'>weight: {weight}</p>
+            <p className='details'>personalBestSquat: {personalBestSquat}</p>
+            <p className='details'>personalBestBench: {personalBestBench}</p>
+            <p className='details'>personalBestMile: {personalBestMile}</p>
+            <p className='details'>personalBestDeadlift: {personalBestDeadlift}</p>
+            <p className='details'> bodyFatPercentage: {bodyFatPercentage}</p>
             </div>
         )}
         <h3 className="displayButton" onClick={handleDisplay}>
@@ -100,23 +101,28 @@ function Profile({ user }) {
       {update ? (
         <p> </p>
       ) : (
+        <div className='updateAccount'>
         <form className="update-Account" onSubmit={handleSubmit}>
-          <label>First Name: </label>
+          <h3 className='accountInfo'> Update Account Information</h3>
+          {/* <label>First Name: </label> */}
           <input className="accountInput"
+          placeholder="First Name"
             type="text"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
           <br />
-          <label>Last Name: </label>
+          {/* <label>Last Name: </label> */}
           <input className="accountInput"
+          placeholder="Last Name"
             type="text"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
           <br />
-          <label>Weight: </label>
+          {/* <label>Weight: </label> */}
           <input className="accountInput"
+          placeholder="Weight"
             type="text"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
@@ -125,44 +131,51 @@ function Profile({ user }) {
           {/* <label>Email: </label>
         <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
         <br /> */}
-          <label>Goal: </label>
+          {/* <label>Goal: </label> */}
           <input className="accountInput"
+          placeholder="Goals"
             type="text"
             value={goal}
             onChange={(e) => setGoal(e.target.value)}
           />
           <br />
-          <label>Personal Best Squat: </label>
+          {/* <label>Personal Best Squat: </label> */}
           <input className="accountInput"
+          placeholder="Personal Best Squat:"
             type="text"
             value={personalBestSquat}
             onChange={(e) => setPersonalBestSquat(e.target.value)}
           />
           <br />
-          <label>Personal Best Bench: </label>
+          {/* <label>Personal Best Bench: </label> */}
           <input className="accountInput"
+          placeholder="Person Best Bench"
             type="text"
             value={personalBestBench}
             onChange={(e) => setPersonalBestBench(e.target.value)}
           />
           <br />
-          <label>Personal Best Mile: </label>
+          {/* <label>Personal Best Mile: </label> */}
           <input className="accountInput"
+          placeholder="Person Best Mile Time"
             type="text"
             value={personalBestMile}
             onChange={(e) => setPersonalBestMile(e.target.value)}
           />
           <br />
-          <label>Personal Best Deadlift: </label>
+          {/* <label>Personal Best Deadlift: </label> */}
           <input className="accountInput"
+          placeholder="Personal Best Deadlift Time"
             type="text"
             value={personalBestDeadlift}
             onChange={(e) => setPersonalBestDeadlift(e.target.value)}
           />
           <br />
 
-          <label>Body Fat Percentage: </label>
+          {/* <label>Body Fat Percentage: </label> */}
+         
           <input className="accountInput"
+          placeholder='Current Body Fat Percentage'
             type="text"
             value={bodyFatPercentage}
             onChange={(e) => setBodyFatPercentage(e.target.value)}
@@ -172,6 +185,7 @@ function Profile({ user }) {
 
           <input className='accountButton' type="Submit" value="Update Account" />
         </form>
+        </div>
       )}
       <h3 className="updateButton" onClick={handleClick}>
         {update ? "Update Account" : "Account up-to date"}

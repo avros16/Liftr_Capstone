@@ -1,20 +1,22 @@
 import React from "react"
-
+import "./GeneralCard.css"
 
 
 function GlutesCard({glute, user}) {
 
   console.log(user)
+
+
   return (
-    <div>
+    <div className='card'>
         <div>
-            <img src={glute.gifUrl} alt="gif" />
+            <img className='pictures' src={glute.gifUrl} alt="gif" />
         </div>
         <div>
-            <h2>
+            <h2 className='description'>
                 {glute.name} - {glute.target}
             </h2>
-            <p>Equipment: {glute.equipment}</p>
+            <p className='equipment'>Equipment: {glute.equipment}</p>
         </div>
     </div>
   )

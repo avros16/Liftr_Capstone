@@ -20,6 +20,30 @@ function WelcomePage({user}) {
       }
 
 
+      function handleClickBack() {
+            navigate('/back', { state: {user} })
+
+
+
+      //   const newUrl = ('/glutes', { state: {user} }); 
+      //   window.location.href = newUrl;
+      }
+
+
+
+
+
+
+
+
+      function handleClickArms() {
+            navigate('/arms', { state: {user} })
+
+
+
+      //   const newUrl = ('/glutes', { state: {user} }); 
+      //   window.location.href = newUrl;
+      }
 
       function handleClickTwo() {
             navigate('/discover', { state: {user} })
@@ -30,7 +54,7 @@ function WelcomePage({user}) {
   <div className="start"> 
 
 <p className="welcome" align="center">
-Variety is the spice of life! Doing different exercises can help get you where you want to be, faster. Need some inspirtation? 
+Variety is the spice of life! Doing different exercises can help get you where you want to be, faster. Need some inspirtation? Click on the button below to start browsing. If you're looking for a specific body part, click on the image!
 </p>
 
 <div className="innerSection">
@@ -53,7 +77,7 @@ Variety is the spice of life! Doing different exercises can help get you where y
 
 
       <div>
-<img id="front" className="chest" src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" onClick={handleClick}/>
+<img id="front" className="chest" src="https://i.ibb.co/HnJmMfF/IMG-9812-removebg-preview.png" alt="IMG-9812-removebg-preview" border="0" onClick={handleClickArms}/>
       </div>
 
 
@@ -80,7 +104,7 @@ Variety is the spice of life! Doing different exercises can help get you where y
 
 <img id="back" className="head2" src="https://i.ibb.co/6rCgggJ/IMG-9822-removebg-preview.png" alt="IMG-9822-removebg-preview" border="0"/>
 
-<img id="back" className="back" src="https://i.ibb.co/cgtnkJ7/IMG-9821-removebg-preview.png" alt="IMG-9821-removebg-preview" border="0"/>
+<img id="back" className="back" src="https://i.ibb.co/cgtnkJ7/IMG-9821-removebg-preview.png" alt="IMG-9821-removebg-preview" border="0" onClick={handleClickBack}/>
 
 <img id="back" className="glutes" src="https://i.ibb.co/xYH1Vs5/IMG-9820-removebg-preview.png" alt="IMG-9820-removebg-preview" border="0" onClick={handleClick}/>
 

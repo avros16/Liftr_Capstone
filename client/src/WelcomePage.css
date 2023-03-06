@@ -5,6 +5,10 @@
     margin: 50px;
 }
 
+.welcome {
+  font-size: 30px;
+}
+
 .innerSection{
     background-color: #545454;
     margin: 100px;
@@ -26,6 +30,7 @@
     width: 300px;
     border: 0px; 
     border-radius: 25px;
+    margin-left: 390px;
 }
 
 .button:hover {

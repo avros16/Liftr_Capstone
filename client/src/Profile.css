@@ -1,0 +1,83 @@
+.account {
+    background-color: #363636;
+    width: 600px;
+    height: 800px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.accountInfo {
+    padding-top: 40px;
+    color: #ff1616;;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+.details {
+    width: 76%;
+    color: rgb(163, 18, 18);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 80px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    .accountInput {
+            width: 76%;
+            color: rgb(38, 50, 56);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background: rgba(136, 126, 126, 0.04);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            box-sizing: border-box;
+            border: 2px solid rgba(0, 0, 0, 0.02);
+            margin-bottom: 50px;
+            margin-left: 65px;
+            text-align: center;
+            margin-bottom: 27px;
+            font-family: 'Ubuntu', sans-serif;
+
+    }
+    .updateAccount {
+            background-color: #363636;
+            width: 600px;
+            height: 800px;
+            margin: 7em auto;
+            border-radius: 1.5em;
+            box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+
+
+    }
+
+    .accountButton {
+        cursor: pointer;
+          border-radius: 5em;
+          color: #fff;
+          background: linear-gradient(to right, #545454,#545454, #ff1616);
+          border: 0;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          font-family: 'Ubuntu', sans-serif;
+          margin-left: 35%;
+          font-size: 13px;
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+      }

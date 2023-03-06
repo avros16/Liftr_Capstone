@@ -14,8 +14,8 @@ import Login from './Login'
 // import Hamstrings from './Hamstrings'
 // import Abs from './Abs'
 // import Chest from './Chest'
-// import Arms from './Arms'
-// import Back from './Back'
+import Arms from './Arms'
+import Back from './Back'
 
 
 function App() {
@@ -107,7 +107,7 @@ console.log(page)
   //       .catch(error => console.error(error));
   //   }, []);
   // console.log(pectorals);
-
+  
 
     useEffect(() => {
 
@@ -148,6 +148,8 @@ console.log(page)
               <Route exact path='/Journey' element={<div> <Journey user={user}/> </div>} />
               <Route exact path='/Profile' element={<div> <Profile user={user}/> </div>} />
               <Route exact path='/glutes' element={<div><Glute user={user} glutes={glutes} /> </div>} />
+              <Route exact path='/arms' element={<div><Arms user={user} arms={arms} /> </div>} />
+              <Route exact path='/back' element={<div><Back user={user} back={back} /> </div>} />
 
 {/* 
 
