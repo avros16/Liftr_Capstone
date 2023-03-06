@@ -18,6 +18,7 @@ navigate('/Login');
         <NavLink exact to="/">Home</NavLink>
         {/* <NavLink exact to="/Journey">Journey</NavLink> */}
         <NavLink exact to="/Discover">Discover</NavLink>
+        <NavLink exact to="/UserFavExercises">Favorites</NavLink>
         {/* <NavLink exact to="/MealPlans">Meal Plans</NavLink> */}
         {user.empty? 
         (<NavLink exact to="/">Home</NavLink>)

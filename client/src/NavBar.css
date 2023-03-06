@@ -1,13 +1,22 @@
 .NavBar {
     background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
 .img {
-    max-height: 150px;
+    height: 130px;
 }
 .h3{
     color: #ffff;
+    margin-top: 0px;
+    margin-left: 131px;
+    margin-bottom: 20px;
 }
 
 .NavLink {
     color: #ff1616;
 }
+

@@ -16,6 +16,7 @@ import Login from './Login'
 // import Chest from './Chest'
 import Arms from './Arms'
 import Back from './Back'
+import UserFavExercises from './UserFavExercises'
 
 
 function App() {
@@ -150,6 +151,7 @@ console.log(page)
               <Route exact path='/glutes' element={<div><Glute user={user} glutes={glutes} /> </div>} />
               <Route exact path='/arms' element={<div><Arms user={user} arms={arms} /> </div>} />
               <Route exact path='/back' element={<div><Back user={user} back={back} /> </div>} />
+              <Route exact path='/fav' element={<div><UserFavExercises user={user} back={back} /> </div>} />
 
 {/* 
 
