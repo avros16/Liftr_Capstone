@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import "./DiscoverCard.css"
 
 
@@ -8,6 +8,9 @@ function DiscoverCard({exercise, user}) {
 
 
     const [heart, setHeart] = useState(true)
+console.log({user})
+console.log({exercise})
+
 
     function handleSubmit () {
     fetch('http://localhost:3000/favorites', {

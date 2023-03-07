@@ -3,13 +3,13 @@ import DiscoverCard from "./DiscoverCard"
 import "./DiscoverContainer.css"
 
 
-function DiscoverContainer({exercises}) {
+function DiscoverContainer({exercises,user}) {
     return (
 
 <div className="results">
 
 {exercises.map((exercise) => (
-        <DiscoverCard key={exercise.id} exercise={exercise} />
+        <DiscoverCard key={exercise.id} exercise={exercise} user={user} />
       ))}
 
 

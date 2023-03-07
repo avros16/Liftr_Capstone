@@ -2,7 +2,7 @@ import React from 'react'
 import DiscoverContainer from './DiscoverContainer'
 
 
-function Discover({exercises}) {
+function Discover({exercises, user}) {
 
 
 
@@ -14,7 +14,7 @@ function Discover({exercises}) {
 
       </div>
 
-<DiscoverContainer exercises={exercises} />
+<DiscoverContainer exercises={exercises} user={user} />
 
 <div>
 
