@@ -28,6 +28,9 @@ console.log({exercise})
         console.log(res)
         alert("Exercise has been added to your Favorites list")
     })
+    .catch(err => {
+        console.log("error:", err);})
+
     setHeart(!heart)
 }
   return (

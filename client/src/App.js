@@ -151,7 +151,7 @@ console.log(page)
               <Route exact path='/glutes' element={<div><Glute user={user} glutes={glutes} /> </div>} />
               <Route exact path='/arms' element={<div><Arms user={user} arms={arms} /> </div>} />
               <Route exact path='/back' element={<div><Back user={user} back={back} /> </div>} />
-              <Route exact path='/fav' element={<div><UserFavExercises user={user} back={back} /> </div>} />
+              <Route exact path='/UserFavExercises' element={<div><UserFavExercises user={user} back={back} /> </div>} />
 
 {/* 
 

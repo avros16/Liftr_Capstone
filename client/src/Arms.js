@@ -2,6 +2,7 @@ import React from 'react'
 import ArmsContainer from './ArmsContainer'
 
 function Arms ({arms, user}) {
+  
     return (
   <div>
 

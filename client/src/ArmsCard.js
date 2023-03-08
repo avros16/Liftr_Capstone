@@ -4,7 +4,6 @@ import React from "react"
 
 function ArmsCard({arm, user}) {
 
-  console.log(user)
   return (
     <div>
         <div>

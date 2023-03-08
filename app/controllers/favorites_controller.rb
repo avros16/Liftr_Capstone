@@ -15,8 +15,9 @@ class FavoritesController < ApplicationController
         render json: favorite
     end
     def destroy
-        favorite = find_favorite
-        favorite.destroy
+        favorite = current_user.favorites.where(exercise_id: params[:id])
+        puts favorite
+        favorite.destroy_all
         head :no_content
     end
     private

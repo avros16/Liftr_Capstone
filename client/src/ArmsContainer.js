@@ -9,7 +9,7 @@ function ArmsContainer({arms, user}) {
 
         <div>
 {arms.map((arm)=>(
-    <ArmsCard user={user} key={arms.id} arms={arms}/>
+    <ArmsCard user={user} key={arms.id} arm={arm}/>
 ))}
 
         </div>
