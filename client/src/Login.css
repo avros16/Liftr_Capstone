@@ -17,7 +17,7 @@
 
 .un {
     width: 76%;
-    color: rgb(38, 50, 56);
+    color: rgb(228, 233, 235);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
@@ -37,7 +37,7 @@
 
     .pass {
         width: 76%;
-color: rgb(38, 50, 56);
+        color: rgb(228, 233, 235);
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
@@ -74,4 +74,8 @@ font-family: 'Ubuntu', sans-serif;
       margin-left: 35%;
       font-size: 13px;
       box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+
+  .accountOnclick {
+    color: rgb(228, 233, 235);
   }

@@ -1,5 +1,7 @@
 import React from 'react'
 import ArmsCard from './ArmsCard'
+import './ArmsContainer.css'
+
 
 
 function ArmsContainer({arms, user}) {
@@ -7,7 +9,7 @@ function ArmsContainer({arms, user}) {
   return (
     <div>
 
-        <div>
+        <div className='armscontainer'>
 {arms.map((arm)=>(
     <ArmsCard user={user} key={arms.id} arm={arm}/>
 ))}

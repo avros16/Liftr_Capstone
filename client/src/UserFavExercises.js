@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import "./UserFavExercises.css"
+
 
 function UserFavExercises ({user}) {
     const [fav, setFav] = useState ([])
@@ -35,13 +37,11 @@ function UserFavExercises ({user}) {
 
     return (
         <div>
-            <p> hi</p>
-            <div>
-                <p>hi</p>
-            </div>
-<h3> fav exercises</h3>
+<h1> Favorited Exercises</h1>
 {fav.map((exercise) => (
-<div>
+
+  <div className="containerforresults">
+<div className="box">
             <div>
       <img className="imgs" src={exercise.gifUrl} alt="gif" />
            </div>
@@ -51,7 +51,8 @@ function UserFavExercises ({user}) {
       </h2>
       <p>Equipment: {exercise.equipment}</p>
             </div>
-            <button onClick={()=>{deleteFav(exercise.id)}}>Delete</button>
+            <button className="fav-button" onClick={()=>{deleteFav(exercise.id)}}>Delete</button>
+</div>
 </div>
             ))}
        </div>
